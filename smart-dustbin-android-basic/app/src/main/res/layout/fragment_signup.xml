@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/LogInTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/MyErrorText"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/signUpUserid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_mobile"
+                android:drawableStart="@drawable/ic_mobile"
+                android:drawablePadding="16dp"
+                android:hint="@string/user"
+                android:inputType="phone"
+                android:theme="@style/MyEditText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/LogInTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/MyErrorText"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/signUpPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawableStart="@drawable/ic_password"
+                android:drawablePadding="16dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:theme="@style/MyEditText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/LogInTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/MyErrorText"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_confirm_password"
+                android:drawableStart="@drawable/ic_confirm_password"
+                android:drawablePadding="16dp"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:theme="@style/MyEditText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/LogInTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/MyErrorText"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_fullname"
+                android:drawableStart="@drawable/ic_fullname"
+                android:drawablePadding="16dp"
+                android:hint="@string/full_name"
+                android:inputType="text"
+                android:theme="@style/MyEditText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/LogInTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/MyErrorText"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/adharNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_adhaar"
+                android:drawableStart="@drawable/ic_adhaar"
+                android:drawablePadding="16dp"
+                android:hint="@string/adhaar_no"
+                android:inputType="text"
+                android:theme="@style/MyEditText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <include
+            android:id="@+id/signUpUser"
+            layout="@layout/radio_buttton_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/LogInTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/MyErrorText"
+            app:hintTextAppearance="@style/MyHintText">
+
+        <EditText
+            android:id="@+id/supervisorId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_id"
+            android:drawableStart="@drawable/ic_id"
+            android:drawablePadding="16dp"
+            android:hint="@string/supervisor_id"
+            android:inputType="text"
+            android:theme="@style/MyEditText"
+            android:visibility="gone"/>
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            style="@style/LogInTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/MyErrorText"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_address"
+                android:drawableStart="@drawable/ic_address"
+                android:drawablePadding="16dp"
+                android:hint="@string/address"
+                android:inputType="text"
+                android:theme="@style/MyEditText" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            style="@style/LogInTheme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/MyErrorText"
+            app:hintTextAppearance="@style/MyHintText">
+
+            <EditText
+                android:id="@+id/emailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="16dp"
+                android:hint="@string/email_id"
+                android:inputType="text"
+                android:theme="@style/MyEditText" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            style="@style/LogInTheme">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/submitButton"
+                style="@style/MyButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/submit"
+                android:theme="@style/MyButtonTheme"
+                />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/resetButton"
+                style="@style/MyButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/reset"
+                android:theme="@style/MyButtonTheme"
+
+                />
+
+        </LinearLayout>
+        <TextView
+            style="@style/LogInTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/have_account"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/colorAccent"/>
+
+        <ProgressBar
+            android:id="@+id/signUpProgBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

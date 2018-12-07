@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:padding="@dimen/md_keylines">
+
+    <ImageView
+        android:id="@+id/statusColor"
+        android:layout_width="@dimen/dustbin_icon"
+        android:layout_height="@dimen/dustbin_icon"
+        app:srcCompat="@drawable/ic_status_half" />
+
+    <TextView
+        android:id="@+id/dustbinId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/md_keylines"
+        android:layout_toRightOf="@+id/statusColor"
+        android:text="dustbinid"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="@dimen/list_heading" />
+
+    <TextView
+        android:id="@+id/halfTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/dustbinId"
+        android:text="9:30 AM"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textSize="@dimen/list_subheading" />
+
+    <TextView
+        android:id="@+id/areaName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dustbinId"
+        android:layout_marginLeft="@dimen/md_keylines"
+        android:layout_toRightOf="@+id/statusColor"
+        android:singleLine="false"
+        android:text="area"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="@color/medium_grey"
+        android:textSize="@dimen/list_subheading" />
+</RelativeLayout>

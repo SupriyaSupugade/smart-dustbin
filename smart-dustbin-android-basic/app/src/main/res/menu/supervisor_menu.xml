@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/actionAssignWorker"
+            android:icon="@drawable/ic_assignment_ind_black_24dp"
+            android:title="@string/item1"
+
+            />
+        <item
+            android:id="@+id/actionAddDustbin"
+            android:icon="@drawable/ic_smart_dustbin_icon"
+            android:title="@string/item2"
+
+            />
+
+
+        <item
+            android:id="@+id/profileItem"
+            android:icon="@drawable/ic_account"
+            android:title="@string/item3" />
+
+        <item
+            android:id="@+id/workerListItem"
+            android:icon="@drawable/ic_workerlist"
+            android:title="@string/item4" />
+
+        <item
+            android:id="@+id/logOutItem"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/item5" />
+    </group>
+
+</menu>

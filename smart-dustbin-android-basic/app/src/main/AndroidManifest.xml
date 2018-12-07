@@ -1,0 +1,59 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.techfirebase.android.smartdustbin">
+
+    // for detection of app start we have used for background data syncing
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    // for knowing network state like internet is available or not
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    // for internet access
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    // for gps access
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!--Splash Screen-->
+        <activity
+            android:name=".ui.splashscreen.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!--LogIn-->
+        <activity android:name=".ui.login.LoginActivity" />
+
+        <!--MainSupervisor-->
+        <activity android:name=".ui.supervisor.MainSupervisorActivity" />
+
+        <!--MainWorker-->
+        <activity android:name=".ui.worker.MainWorkerActivity" />
+
+        <!--WorkerProfile-->
+        <activity android:name=".ui.worker.WorkerProfileActivity" />
+
+        <!--SupervisorProfile-->
+        <activity android:name=".ui.supervisor.SupervisorProfileActivity" />
+
+        <!--WorkerList-->
+        <activity android:name=".ui.supervisor.WorkerListActivity" />
+
+        <!--AssignWorker-->
+        <activity android:name=".ui.supervisor.AssignWorkerActivity" />
+
+        <!--AddDustbinDetail-->
+        <activity android:name=".ui.supervisor.AddDustbinDetailActivity" />
+    </application>
+
+</manifest>

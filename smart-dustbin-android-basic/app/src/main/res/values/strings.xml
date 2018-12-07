@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Smart Dustbin</string>
+
+    <!--radio buttons-->
+    <string name="option1">worker</string>
+    <string name="option2">supervisor</string>
+
+    <!--sign in-->
+    <string name="user">Mobile No. as userid</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forget_password">Forgot password ?</string>
+    <string name="log_in">login</string>
+    <string name="new_user_msg">If you are new user first SIGNUP</string>
+
+    <!--sign up-->
+    <string name="full_name">Full Name</string>
+    <string name="adhaar_no">Adhaar No</string>
+    <string name="address">Address</string>
+    <string name="email_id">Email Id</string>
+    <string name="agree">I Agree</string>
+    <string name="submit">submit</string>
+    <string name="reset">reset</string>
+    <string name="have_account">Already have a Account? Go to SIGNIN</string>
+    <string name="supervisor_id">Enter supervisor id</string>
+
+    <!--supervisor nav drawer menu-->
+    <string name="item1">Assign Worker</string>
+    <string name="item2">Add Dustbin Detail</string>
+    <string name="item3">Profile</string>
+    <string name="item4">Worker List</string>
+    <string name="item5">Logout</string>
+
+    <!--assign worker -->
+    <string name="assign1">Enter worker Mobile no</string>
+    <string name="assign2">Enter area id</string>
+    <string name="assign3">Assign</string>
+
+    <!--add dustbin detail -->
+    <string name="add1">Enter Area Id</string>
+    <string name="add2">Enter Dustbin Id</string>
+    <string name="add3">Enter Sensor Id</string>
+    <string name="add4">Enter Latitude</string>
+    <string name="add5">Enter Longitude</string>
+    <string name="add6">Add Detail</string>
+    <string name="add7">Get Location</string>
+
+
+    <!--toolbars title-->
+    <string name="title1">Account</string>
+    <string name="title2">WorkerList</string>
+    <string name="title3">Assign</string>
+    <string name="title4">Dustbin Detail</string>
+
+    <string name="no_data_available">No data available</string>
+
+
+
+
+</resources>
