@@ -1,5 +1,6 @@
-# smart-dustbin
-Features newly implementated as follows
+## smart-dustbin
+#Features newly implementated as follows
+
 Android Architecture change.
 
 Use google map to store area details into database and show location of dustbin to vehicle driver.
